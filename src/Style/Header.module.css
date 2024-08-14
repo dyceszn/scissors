@@ -1,0 +1,18 @@
+.div {
+  /* border: 1px solid black; */
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.p {
+  /* border: 1px solid black; */
+  font-weight: bold;
+}
+
+/* mwdia queries */
+@media screen and (max-width: 1024px), (orientation: portrait) {
+  .div {
+    height: 7vh;
+  }
+}

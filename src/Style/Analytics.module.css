@@ -1,0 +1,134 @@
+.section {
+  /* border: 1px solid black; */
+  background-color: white;
+  border-radius: 0 1rem 1rem 0;
+  width: 60%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.head {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.head p {
+  margin: 0;
+}
+.box1 {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.box2 {
+  /* border: 1px solid black; */
+}
+.box3 {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-direction: row;
+}
+.col1 {
+  /* border: 1px solid black; */
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  /* border: 1px solid black; */
+  background-color: #f3f3f3;
+  border-radius: 8rem;
+  width: 8rem;
+  height: 7.8rem;
+}
+.col2 {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.p {
+  margin: 0;
+  padding: 0;
+}
+.col3 {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  width: 30%;
+  height: 100%;
+}
+.ul {
+  /* border: 1px solid black; */
+  padding: 0 1rem;
+  margin: 0;
+}
+.ul li {
+  padding: 0.5rem 0;
+  font-style: italic;
+  cursor: pointer;
+}
+.canvas {
+  background-color: #f3f3f3;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  /* width: 80%; */
+  height: fit-content;
+  padding: 1rem;
+}
+.col4 {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  padding: 1.5rem;
+  width: 65%;
+  height: 100%;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px), (orientation: portrait) {
+  .section {
+    box-sizing: border-box;
+    border-radius: 0 0 1rem 1rem;
+    width: 100%;
+    height: 63vh;
+    padding: 2rem;
+  }
+  .box1 {
+    /* flex-direction: column; */
+  }
+  .img {
+    width: 70px;
+    height: 70px;
+  }
+  .box3 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+  .col1 {
+    width: 30%;
+  }
+  .col2 {
+    width: 65%;
+  }
+  .col3 {
+    width: 100%;
+  }
+  .col4 {
+    width: 100%;
+  }
+}
