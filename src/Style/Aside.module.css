@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: center;
   transition: background 10s ease, color 1s ease;
+  min-height: 250px;
 }
 .h1 {
   /* border: 1px solid black; */
