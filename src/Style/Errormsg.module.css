@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 200px;
 }
 
 .arrow {
@@ -21,12 +22,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 250px;
 }
 .box {
   /* border: 1px solid black; */
   background-color: white;
   border-radius: 1.2rem;
-  width: clamp(350px, 40%, 500px);
+  width: clamp(300px, 40%, 500px);
   height: 95%;
   display: flex;
   flex-direction: column;
@@ -44,9 +46,17 @@
   /* border: 1px solid black; */
   width: 100%;
   height: 33.3vh;
+  min-height: 200px;
 }
 
 /* Media Queries */
 
 @media screen and (max-width: 1024px), (orientation: portrait) {
+}
+
+/* Media Queries */
+@media screen and (max-height: 750px) {
+  body {
+    overflow-y: scroll;
+  }
 }
