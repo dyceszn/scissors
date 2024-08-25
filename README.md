@@ -73,8 +73,6 @@ Scissor is licensed under the [MIT License](LICENSE).
 For any questions or feedback, feel free to reach out:
 
 - **Email:** duruohaikenna@gmail.com
-- **LinkedIn:** [ Ikenna Duruoha ](www.linkedin.com/in/ikenna-duruoha-5088a1302)
+- **LinkedIn:** [ Ikenna Duruoha ](www.linkedin.com/in/ikennaduruoha)
 
 ---
-
-Feel free to adjust any details to better fit your project's specifics!
