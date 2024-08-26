@@ -7,11 +7,11 @@ import Footer from "../Footer";
 test("renders Footer component correctly", () => {
   render(<Footer />);
 
-  // Check if the div with the correct class is rendered
+  // To check if the div with the correct class is rendered
   const footerDiv = screen.getByRole("contentinfo");
   expect(footerDiv).toBeInTheDocument();
 
-  // Check if the paragraph element is rendered with correct text
+  // To check if the paragraph element is rendered with correct text
   const paragraph = screen.getByText(/© dyceszn 2024/i);
   expect(paragraph).toBeInTheDocument();
 });

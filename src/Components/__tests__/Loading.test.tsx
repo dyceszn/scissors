@@ -7,11 +7,11 @@ import Loading from "../Loading";
 test("renders Loading component correctly", () => {
   render(<Loading />);
 
-  // Check if the div with data-testid="loading-spinner" is rendered
+  // To check if the div with data-testid="loading-spinner" is rendered
   const loadingDiv = screen.getByTestId("loading-spinner");
   expect(loadingDiv).toBeInTheDocument();
 
-  // Check if the h1 element is rendered with correct text
+  // To check if the h1 element is rendered with correct text
   const heading = screen.getByRole("heading", { level: 1 });
   expect(heading).toHaveTextContent("Loading...");
 });

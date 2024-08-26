@@ -12,7 +12,7 @@ describe("Error404 Component", () => {
       </MemoryRouter>
     );
 
-    // Check if Error 404 text is rendered
+    // To check if Error 404 text is rendered
     expect(screen.getByText("Error 404")).toBeInTheDocument();
   });
 });

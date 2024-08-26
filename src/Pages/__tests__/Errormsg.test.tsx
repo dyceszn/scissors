@@ -28,14 +28,14 @@ describe("Errormsg Component", () => {
 
     render(<TestWrapper state={{ message: errorMessage }} />);
 
-    // Check if the error message text is rendered
+    //To check if the error message text is rendered
     expect(screen.getByText(errorMessage)).toBeInTheDocument();
   });
 
   test("renders default error message if no state message is provided", () => {
     render(<TestWrapper />);
 
-    // Check if the default error message is rendered
+    // To check if the default error message is rendered
     expect(screen.getByText("An unknown error occurred.")).toBeInTheDocument();
   });
 
