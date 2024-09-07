@@ -103,7 +103,7 @@
 }
 @media screen and (max-width: 480px) {
   .form {
-    justify-content: unset;
+    /* justify-content: unset; */
   }
   .section {
     padding: 1rem;
