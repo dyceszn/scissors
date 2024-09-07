@@ -166,7 +166,7 @@ const Signup: React.FC = () => {
                 <label htmlFor="terms"> I agree to terms of service</label>
               </div>
 
-              <p>
+              <p className={SignupStyle.login}>
                 Already have an account? <Link to="/login">Log in</Link>
               </p>
             </div>

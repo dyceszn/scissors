@@ -117,7 +117,7 @@ const Login: React.FC = () => {
                 <p>
                   Dont have an account yet? <Link to="/">Create one</Link>
                 </p>
-                <p>
+                <p className={LoginStyle.signup}>
                   Forgot password?{"  "}
                   <span
                     onClick={handleForgotPassword}

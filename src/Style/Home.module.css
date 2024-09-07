@@ -133,3 +133,16 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 480px) {
+  .section {
+    padding: 2.5rem;
+  }
+  .row2 p {
+    /* border: 1px solid black; */
+    font-size: 0.6rem;
+    text-align: center;
+  }
+  .row3 button {
+    font-size: 0.7rem;
+  }
+}

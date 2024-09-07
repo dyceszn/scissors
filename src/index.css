@@ -65,8 +65,8 @@ input:focus {
     flex-direction: column;
   }
 }
-/* @media screen and (max-height: 600px) {
+@media screen and (max-height: 900px) {
   body {
-    height: max-content;
+    height: 900px;
   }
-} */
+}

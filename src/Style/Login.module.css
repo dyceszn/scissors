@@ -101,3 +101,21 @@
     height: 50px;
   } */
 }
+@media screen and (max-width: 480px) {
+  .form {
+    justify-content: unset;
+  }
+  .section {
+    padding: 1rem;
+  }
+  .row6 {
+    height: 3.5rem;
+    /* border: 1px solid black; */
+    flex-direction: column;
+    align-items: normal;
+    justify-content: space-between;
+  }
+  .row6 p {
+    margin: 0;
+  }
+}
