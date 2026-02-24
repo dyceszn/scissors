@@ -29,8 +29,7 @@ To get started with Scissor, follow these steps:
 2. **Install Dependencies:**
 
    ```bash
-   npm install react-router-dom@6
-   npm install axios express cors
+   npm install
    ```
 
 3. **Run the Development Server:**
