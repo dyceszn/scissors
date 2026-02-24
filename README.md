@@ -9,11 +9,11 @@ Scissor is a URL shortening tool that not only shortens URLs but also offers cus
 ## Features
 
 - **URL Shortening:** Quickly shorten long URLs by pasting them into the Scissor platform. The tool generates a compact URL that’s easy to share and manage.
-- **Custom URLs:** Customize your shortened URLs with a personal domain name and specific keywords. Perfect for individuals or businesses aiming to create branded links.
+- **Custom URLs:** Customize your shortened URLs with a personal domain name and specific keywords. Perfect for individuals or businesses aiming to create branded links. (Coming soon)
 
 - **QR Code Generation:** Generate and download QR codes for your shortened URLs. This feature uses a third-party QR code generator API for seamless integration.
 
-- **Analytics:** Track the performance of your shortened URLs with basic analytics. View click counts and geographical data using Firebase’s analytics features.
+- **Analytics:** Track the performance of your shortened URLs with basic analytics. View click counts and geographical data using Firebase’s analytics features. (Coming soon)
 
 ## Getting Started
 

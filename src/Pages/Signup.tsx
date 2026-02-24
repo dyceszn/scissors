@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Aside, Footer, Header } from "../Components";
 import SignupStyle from "../Style/Signup.module.css";
 import { UserContext } from "../Contexts/UserContext";
+import { ImageUp } from "lucide-react";
 import { auth, db, storage } from "../Config/firebaseConfig"; // Import storage
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
@@ -70,7 +71,7 @@ const Signup: React.FC = () => {
       const userCredential = await createUserWithEmailAndPassword(
         auth,
         email,
-        password
+        password,
       );
       await updateProfile(userCredential.user, {
         // Update user profile
@@ -115,12 +116,20 @@ const Signup: React.FC = () => {
             <p className={SignupStyle.row1}>Create Account</p>
             <div className={SignupStyle.row2}>
               <div className={SignupStyle.col1}>
-                <input
-                  type="file"
-                  accept="image/*"
-                  name="image"
-                  onChange={handleImageChange}
-                />
+                <label
+                  className={SignupStyle.uploadButton}
+                  aria-label="Upload profile image"
+                >
+                  <ImageUp size={20} aria-hidden="true" />
+                  <input
+                    className={SignupStyle.fileInput}
+                    type="file"
+                    accept="image/*"
+                    name="image"
+                    aria-label="Select profile image"
+                    onChange={handleImageChange}
+                  />
+                </label>
               </div>
 
               <input

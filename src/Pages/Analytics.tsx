@@ -20,7 +20,6 @@ const Analytics: React.FC = () => {
   // use state
   const [selectedLink, setSelectedLink] = useState<string | null>(null);
   const [analyticsData, setAnalyticsData] = useState<any>(null);
-  const [clicksByDate, setClicksByDate] = useState<any[]>([]);
 
   // To check if user is signed in
   useEffect(() => {
@@ -46,7 +45,6 @@ const Analytics: React.FC = () => {
       await logLinkClick(sanitizedLink);
       const data = await getLinkAnalytics(sanitizedLink);
       setAnalyticsData(data);
-      setClicksByDate(data?.clicks || []);
     } catch (error) {
       console.error("Error logging link click:", error);
     }
@@ -111,16 +109,9 @@ const Analytics: React.FC = () => {
               <div className={AnalyticsStyle.col4}>
                 {analyticsData ? (
                   <>
-                    <p>No of clicks: {analyticsData.clicks.length || "N/A"}</p>
                     <div className={AnalyticsStyle.canvas}>
                       <img src={generateQRCode(selectedLink)} alt="" />
                     </div>
-                    <p>Your latest clicks:</p>
-                    <ul>
-                      {clicksByDate.slice(0, 5).map((click, index) => (
-                        <li key={index}>{click}</li>
-                      ))}
-                    </ul>
                   </>
                 ) : (
                   <div>
